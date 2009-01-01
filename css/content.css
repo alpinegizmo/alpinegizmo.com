@@ -6,6 +6,14 @@
   clear:right;
 }
 
+#content .article_body {
+  border-bottom: 1px solid #9a7d61;
+}
+
+#content .article_body, #content .meta {
+  padding-top: 2em;
+}
+
 #content h2 {
   color: #9a7d61;
   font-size: 1.8em;
@@ -90,7 +98,7 @@
 /* have worked around helper routines for now */
 
 #content .post .meta {
-  background: #eeeeee; 
+  // background: #eeeeee; 
   font-size: 0.9em; 
   margin: 0em 1em 1em 1em; 
   width:150px;

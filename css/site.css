@@ -20,6 +20,7 @@ body, div, p, img, h1, h2, h3, h4 {
 
 body {
   font: normal 12px verdana, arial, helvetica, sans-serif;
+  background-image: url(/images/background.jpg);
 }
 
 a {
@@ -41,28 +42,21 @@ img {
 }
 
 #content {
-  margin-left: 390px;
-  max-width: 56em;
-  padding: 3.5em 1.5em;
+  margin-left: 370px;
+  max-width: 52em;
+  padding: 2.5em 1.5em;
 }
 
 #sidebar {
-  background: #000000 none repeat scroll 0%;
-  width:325px;
-  padding:30px 20px 400px 20px; 
+  width: 325px;
+  padding: 20px;
+  margin-top: 10px;
   float: left; 
-}
-
-#footer {
-  height:40px; 
-  padding:10px;
-  clear:both; 
 }
 
 h1, h2, h3 {
   font: 3.5em/1.2em "Trajan", "Baskerville", "Times New Roman", georgia, serif; 
   // text-transform:uppercase; 
-  // font-weight:200;
   letter-spacing:0.07em;
 }
 
