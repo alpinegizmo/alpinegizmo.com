@@ -81,13 +81,9 @@
 	color: #e7dbd5;
 }
 
-#content pre, 
-#content code { font: normal 12px "courier new", courier, serif; }
 
 #content pre {
-	color: #eee; 
-	background: #000; 
-	margin: 1em 0; padding: 10px;
+	margin: 0.5em 1.5em;
 	overflow: auto; 
 }
 
