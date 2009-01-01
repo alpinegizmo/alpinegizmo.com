@@ -1,0 +1,73 @@
+/**
+ * site.css
+ * Imports all stylesheets and sets defaults for common elements
+ * This is the only file you need to include in your html document
+ */
+@import 'sidebar.css';
+@import 'content.css';
+@import 'syntax.css';
+
+@media print {
+	#sidebar {display:none;}
+	#content {float:none; width:100%;}
+}
+
+body, div, p, img, h1, h2, h3, h4 {
+	margin: 0; 
+	padding: 0; 
+	text-align: left;
+}
+
+body {
+	font: normal 12px verdana, arial, helvetica, sans-serif;
+}
+
+a {
+	color:#9a7d61;
+	text-decoration:none;
+}
+
+img {
+	border:0;
+}
+
+
+/*
+	Controls the main layout and colours (width, height, margin, padding)
+*/
+
+#site {
+	width: 100%;
+}
+
+#content {
+	margin-left: 390px;
+	max-width: 56em;
+	padding: 3.5em 0;
+}
+
+#sidebar {
+	background: #000000 none repeat scroll 0%;
+	width:325px;
+	padding:30px 20px 400px 20px; 
+	float: left; 
+}
+
+#footer {
+	height:40px; 
+	padding:10px;
+	clear:both; 
+}
+
+h1, h2, h3 {
+	font: 3.5em/1.2em "Trajan", "Baskerville", "Times New Roman", georgia, serif; 
+	// text-transform:uppercase; 
+	// font-weight:200;
+	letter-spacing:0.07em;
+}
+
+.date {
+  // font-family: Monaco, "Courier New", monospace;
+  font-size: 85%;
+}
+

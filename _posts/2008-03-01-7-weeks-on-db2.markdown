@@ -1,0 +1,20 @@
+---
+layout: post
+title: 7 weeks on DB2
+---
+
+For a new project we've been using IBM's DB2 database and its pureXML features. This has been my first serious exposure to the brave new world of building web applications on an XML platform. Now that I've been doing battle with DB2 for seven weeks, I thought I'd give a progress report. In subsequent posts I'll try to share what we're learning about how well this all works.
+
+In the past I've used SQLite, MySQL and PostgreSQL (usually underneath Rails) for web development. Compared to these open source databases, my first impression of DB2 has been -- to be blunt -- that it sucks. Now I'm aware that proponents of DB2 (see [Zen And The Art Of Ruby Programming](http://antoniocangiano.com/2008/02/29/on-rails-and-db2/), for example) will tell you that because Rails is database agnostic (with a mysql bias) it doesn't show off the strengths of DB2's advanced database features. Apparently, DB2's strengths include "utmost speed, pureXML, compression, replication, high availability, [and] affordable 24/7 support." That may be true. I feel a bit like I woke up one morning, and found an 18-wheeler in my garage. It may be extremely capable and powerful, but so far, I'm just feeling proud that I've managed to get it down the driveway and onto the street without hitting anything or killing anyone. I still miss all the things that made driving my car a comfortable experience.
+
+IBM, if you're listening, there are a few simple things you could do to make the transition to DB2 less painful:
+
+* Put some resources into improving the usability of the tools. For starters, put readline support into the command line processor, and modify the command editor in db2cc to wrap lines within a fixed-width textarea. (Yes, I'm aware of the history and edit features in CLP.) Figuring out how to do really complex queries with the current tools has been a seriously frustrating experience.
+
+* Get rid of silly limits. For example, the shell interface truncates XML results to 4000 bytes. What's the point of offering a shell-based command line processor if you can't use it in shell scripts?
+
+* Find some way to make routine administrative tasks, including backup and restore, managing text and xml indexes, and doing server restarts, less of a problem. We're spending way too much time fighting with the basics.
+
+* The ibm_db ruby on rails adapter is half-finished. Please get us to the point where "rake test" works.
+
+We're getting past these issues by building in-house tools to smooth over the rough edges. Why bother? pureXML is the answer. In the future I hope to let you know if it proved worth the bother.

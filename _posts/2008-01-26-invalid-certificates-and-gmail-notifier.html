@@ -1,0 +1,17 @@
+---
+layout: post
+title: Invalid certificates and GMail notifier
+---
+
+<p>I've been using Google Mail as my primary email solution for some time now (I do send a copy of my business email to another server, just in case). One of the things I like about Google Mail is their notifier for OS X. But until yesterday I've been using a version from 2005, because all newer versions have had a big problem: at least for me, modern versions of the gmail notifier pop-up a dialog every 10 minutes promping me to signin again with my Google email address and password. This goes beyond annoying into the realm of totally unusable. (I also preferred the old version because it was small and simple. The newer versions use a lot more memory to provide features I don't want.)</p>
+
+<p>Yesterday my old, cherished gmail notifier stopped working. After going all day with a silent gray M in my mac's menubar, I decided to try the latest version, which, sure enough, gave me trouble. Convinced that google had finally turned off some service the older version depends upon, I was motivated to find a solution -- which I seem to have found. If you're having this problem, here's what to do:</p>
+
+<ol>
+<li>Open Safari.</li>
+<li>Browse to https://google.com</li>
+<li>Accept the invalid certificate that's causing the trouble. In my case the certificate for google.com came from google.es.</li>
+<li>That's it.</li>
+</ol>
+
+<p>Seems like google could make this a lot easier.</p>

@@ -1,0 +1,27 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>alpinegizmo</title>
+ <link href="http://alpinegizmo.com/atom.xml" rel="self"/>
+ <link href="http://alpinegizmo.com/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://alpinegizmo.com/</id>
+ <author>
+   <name>David Anderson</name>
+   <email>david@alpinegizmo.com</email>
+ </author>
+ 
+ {% for post in site.posts %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="http://alpinegizmo.com{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://alpinegizmo.com{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+ 
+</feed>
