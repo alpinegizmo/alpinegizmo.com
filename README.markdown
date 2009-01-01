@@ -1,6 +1,6 @@
 # This is the data for my blog.
 
-It is transformed by [Jekyll](http://github.com/mojombo/jekyll) into the static site [http://alpinegizmo.com](alpinegizmo.com).
+It is automatically transformed by [Jekyll](http://github.com/mojombo/jekyll) into the static site [http://alpinegizmo.com](alpinegizmo.com).
 
 # License
 
