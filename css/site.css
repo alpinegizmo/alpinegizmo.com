@@ -55,8 +55,9 @@ img {
 }
 
 #footer {
+  clear: both;
   color: #666;
-  padding: 20px;
+  padding: 200px 20px 20px 20px;
   font-size: 85%;
 }
 
