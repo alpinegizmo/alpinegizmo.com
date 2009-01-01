@@ -54,6 +54,12 @@ img {
   float: left; 
 }
 
+#footer {
+  color: #666;
+  padding: 20px;
+  font-size: 85%;
+}
+
 h1, h2, h3 {
   font: 3.5em/1.2em "Trajan", "Baskerville", "Times New Roman", georgia, serif; 
   // text-transform:uppercase; 
