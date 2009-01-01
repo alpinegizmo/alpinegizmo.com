@@ -15,17 +15,21 @@ To get DB2 to apply an XSL stylesheet to some XML, you have to use an SQL functi
 
 A simple example in which the XML to be transformed is coming from the xmldata column in the employees table:
 
-    SELECT XSLTRANSFORM(xmldata 
-      USING (SELECT xsldata FROM xslts WHERE name = 'employee.xsl')) AS html 
-    FROM employees WHERE id = 833038373
+{% highlight sql %}
+SELECT XSLTRANSFORM(xmldata 
+  USING (SELECT xsldata FROM xslts WHERE name = 'employee.xsl')) AS html 
+FROM employees WHERE id = 833038373
+{% endhighlight %}
 
 It's a little more fun when the source of the XML is an embedded xquery:
 
-    SELECT XSLTRANSFORM (
-      (SELECT XMLCAST(XMLQUERY('$data//Phones' PASSING xmldata AS "data") AS XML) 
-        FROM employees WHERE id = 833038373) 
-      USING (SELECT xsldata FROM xslts WHERE name = 'phones.xsl')) AS html 
-    FROM employees WHERE id = 833038373
+{% highlight sql %}
+SELECT XSLTRANSFORM (
+ (SELECT XMLCAST(XMLQUERY('$data//Phones' PASSING xmldata AS "data") AS XML) 
+   FROM employees WHERE id = 833038373) 
+ USING (SELECT xsldata FROM xslts WHERE name = 'phones.xsl')) AS html 
+FROM employees WHERE id = 833038373
+{% endhighlight %}
 
 It may look a bit strange that the WHERE id = 833038373 clause occurs twice. The second instance could be pretty much anything that returns one row. While many SQL databases will accept a simple "select 1", DB2 insists on a FROM clause, such as "select 1 from employees fetch first 1 rows only". The only really important part of the last line above (i.e. "FROM employees WHERE id = 833038373") is that it return exactly one row.
 
