@@ -1,28 +1,28 @@
 #sidebar {
-	font-size:0.9em; 
+  font-size:0.9em; 
 }
 
 #sidebar a {
-	color:#888;
+  color:#888;
 }
 
 #sidebar h1 { 
   color: #eee; 
   font-weight:200%; 
-	text-shadow: #aaa 0.1em 0.1em 0.3em;
-	margin-bottom: 0.5em;
+  text-shadow: #aaa 0.1em 0.1em 0.3em;
+  margin-bottom: 0.5em;
 }
 
 #sidebar h3 { 
-	font: bold 14px "lucida grande", verdana, arial, helvetica, sans-serif; 
-	color:#9a7d61;
-	font-weight:100;
-	padding-left:0.2em;
+  font: bold 14px "lucida grande", verdana, arial, helvetica, sans-serif; 
+  color:#9a7d61;
+  font-weight:100;
+  padding-left:0.2em;
 }
 
 #sidebar ul {
-	list-style-type: none; 
-	margin: 0 0 1em; padding: 0.6em 1em;
+  list-style-type: none; 
+  margin: 0 0 1em; padding: 0.6em 1em;
 }
 
 #sidebar li { margin: 0; padding: 0.2em 0; color:#ddd;}

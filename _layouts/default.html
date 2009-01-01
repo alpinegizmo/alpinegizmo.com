@@ -15,17 +15,17 @@
    <link rel="stylesheet" href="/css/site.css" type="text/css" media="screen, projection" />
 </head>
 <body>
- 
+
 <div id="site">
   
   <div id="page">
     
     <div id="sidebar">
-		  <div id="header">		   
-		    <a href="/"><h1>alpinegizmo</h1></a>
-	    </div>
-	    
-	    <h3 class='sidebar-title'>David Anderson</h3>
+      <div id="header">      
+        <a href="/"><h1>alpinegizmo</h1></a>
+      </div>
+      
+      <h3 class='sidebar-title'>David Anderson</h3>
       <ul>
         <li>folklogic is available for hire!</li>
         <li><p class='indented'>mobile: +33 618 707 837</p></li>
@@ -36,26 +36,26 @@
         <li><a href="http://api.flickr.com/services/feeds/photos_public.gne?id=19228922@N00&lang=en-us&format=rss_200" title="flickr">alpinegizmo @ flickr</a></li>
       </ul>
 
-	    <h3 class='sidebar-title'>Blog Posts</h3>
+      <h3 class='sidebar-title'>Blog Posts</h3>
       <ul>
         {% for post in site.posts %}
           <li><span class='date'>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
         {% endfor %}
       </ul>
 
-	    <h3 class='sidebar-title'>Links</h3>
+      <h3 class='sidebar-title'>Links</h3>
       <ul>
         <li><a href="http://nonlynnear.com" title="nonlynnear">nonlynnear</a></li>
         <li><a href="http://larry.baltz.org/blog" title="LarryOnLine">LarryOnLine</a></li>
       </ul>
 
-	    <h3 class='sidebar-title'>Feed</h3>
+      <h3 class='sidebar-title'>Feed</h3>
       <ul>
         <li><a href="/atom.xml" title="atom feed">articles</a></li>
       </ul>
 
-	  <!-- end of sidebar -->
-	  </div>
+    <!-- end of sidebar -->
+    </div>
 
     <div id="content">
       {{ content }}

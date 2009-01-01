@@ -9,14 +9,14 @@ layout: nil
     <language>en-us</language>
     <ttl>40</ttl>
     <description></description>
- 		{% for post in site.posts %}
-	    <item>
-	      <title>{{ post.title }}</title>
-	      <description>{{ post.content }}</description>
-	      <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
-	      <guid isPermaLink="false">{{ post.id }}</guid>
-	      <link>{{ post.url }}</link>
-	    </item>
+    {% for post in site.posts %}
+      <item>
+        <title>{{ post.title }}</title>
+        <description>{{ post.content }}</description>
+        <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+        <guid isPermaLink="false">{{ post.id }}</guid>
+        <link>{{ post.url }}</link>
+      </item>
     {% endfor %}
   </channel>
 </rss>

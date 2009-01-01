@@ -2,162 +2,162 @@
 
 /* Articles (posts) */
 #content .post { 
-	color:#555;
-	clear:right;
+  color:#555;
+  clear:right;
 }
 
 #content h2 {
   color: #9a7d61;
-	font-size: 1.8em;
-	margin-bottom: 0.3em;
-	font-weight: 400;
-	text-shadow: #aaa 0.1em 0.1em 0.3em;
+  font-size: 1.8em;
+  margin-bottom: 0.3em;
+  font-weight: 400;
+  text-shadow: #aaa 0.1em 0.1em 0.3em;
 }
 
 #content h3 {
   color: #9a7d61;
-	font-size: 1.2em;
-	margin: 1.8em 0 .5em; padding: 0;
+  font-size: 1.2em;
+  margin: 1.8em 0 .5em; padding: 0;
 }
 
 #content h4 { 
   color: #9a7d61;
-	font-size: 0.8em;
+  font-size: 0.8em;
 }
 
 #content p {
-	color: #222; 
-	line-height: 16px; 
-	margin: 0 0 1.4em; padding: 0;
+  color: #222; 
+  line-height: 16px; 
+  margin: 0 0 1.4em; padding: 0;
 }
 
 #content table {
-	font-size:0.9em;
-	background: #eeeeee; 
-	margin-bottom:2em;
-	border-collapse:collapse;
-	border-bottom: 1px solid #777;
-	border-top: 1px solid #777;
+  font-size:0.9em;
+  background: #eeeeee; 
+  margin-bottom:2em;
+  border-collapse:collapse;
+  border-bottom: 1px solid #777;
+  border-top: 1px solid #777;
 }
 
 #content table td, #content table th {
-	border-top:1px solid #fff;
-	border-left:1px solid #aaa;
-	border-right:1px solid #aaa;
-	padding:0.4em 0.6em;
+  border-top:1px solid #fff;
+  border-left:1px solid #aaa;
+  border-right:1px solid #aaa;
+  padding:0.4em 0.6em;
 }
 
 #content table th {
-	border-top: 1px solid #777;
-	border-bottom: 1px solid #aaa;
-	text-transform:uppercase;
-	text-align:left;
-	color:#7a5d41;
-	background-color:#ccc;
-	font: 1.1em/1.2em "Trajan", "Baskerville", "Times New Roman", georgia, serif; 
-	padding-top:0.7em;
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #aaa;
+  text-transform:uppercase;
+  text-align:left;
+  color:#7a5d41;
+  background-color:#ccc;
+  font: 1.1em/1.2em "Trajan", "Baskerville", "Times New Roman", georgia, serif; 
+  padding-top:0.7em;
 }
 
 #content .post .article_body ol {
-	margin: 1em 1em; 
-	padding-left: 3.4em;
+  margin: 1em 1em; 
+  padding-left: 3.4em;
 }
 
 #content .post .article_body ul {
-	margin: 1em 1em; 
-	padding-left: 1.6em;
-	list-style: none; 	
+  margin: 1em 1em; 
+  padding-left: 1.6em;
+  list-style: none;   
 }
 
 #content .post .article_body li {
-	padding-top: 0.3em;
+  padding-top: 0.3em;
 }
 
 
 #content .post .article_body ul li:before { 
-	// content: "\00272A  ";
-	font-size: 1.3em;
-	vertical-align: -0.15em;
-	color: #e7dbd5;
+  // content: "\00272A  ";
+  font-size: 1.3em;
+  vertical-align: -0.15em;
+  color: #e7dbd5;
 }
 
 
 #content pre {
-	margin: 0.5em 1.5em;
-	overflow: auto; 
+  margin: 0.5em 1.5em;
+  overflow: auto; 
 }
 
 /* have worked around helper routines for now */
 
 #content .post .meta {
-	background: #eeeeee; 
-	font-size: 0.9em; 
-	margin: 0em 1em 1em 1em; 
-	width:150px;
-	float:right;
+  background: #eeeeee; 
+  font-size: 0.9em; 
+  margin: 0em 1em 1em 1em; 
+  width:150px;
+  float:right;
 }
 
 #content .post .meta h4 {
   display: none;
-	padding: 0.7em 1em;
-	border-top: 1px solid #ccc; 
-	background: #dedede;	 
-	text-transform:uppercase;
-	font-weight:300;
-	margin-top:-1px;
-	letter-spacing:0.2em;
+  padding: 0.7em 1em;
+  border-top: 1px solid #ccc; 
+  background: #dedede;   
+  text-transform:uppercase;
+  font-weight:300;
+  margin-top:-1px;
+  letter-spacing:0.2em;
 }
 
 
 #content .post .meta p {
-	padding: 0.3em 1em;
-	margin:0px;
+  padding: 0.3em 1em;
+  margin:0px;
 }
 
 #content .post .meta .auth_name {
-		padding-bottom:0em;
+    padding-bottom:0em;
 }
 
 #content .post .meta .post_time {
-	color:#999;
-	padding-top:0em;
+  color:#999;
+  padding-top:0em;
 }
 
 #content .post .meta ul {
-	margin:0;
-	padding:0em 0em 0.3em 1em;
-	list-style:none;
+  margin:0;
+  padding:0em 0em 0.3em 1em;
+  list-style:none;
 }
 
 #content .post .meta li {
-	padding:0.3em 0em;
+  padding:0.3em 0em;
 }
-	
+  
 #content .post blockquote p, #content .post q, .pullquote {
-	color:#877b75;
-	padding-left:6px;
-	line-height:2em;
-	font: 1.2em/1.7em "Times New Roman", georgia, serif; 
+  color:#877b75;
+  padding-left:6px;
+  line-height:2em;
+  font: 1.2em/1.7em "Times New Roman", georgia, serif; 
 
-}	
-	
+} 
+  
 #content .post blockquote p:before, .pullquote:before{
-	content:"\00201C";
-	font-size:2em;
-	color:#c7bbb5;
-	margin-left:-0.4em;
-	text-shadow:#ccc 0.1em 0.1em 0.2em;
+  content:"\00201C";
+  font-size:2em;
+  color:#c7bbb5;
+  margin-left:-0.4em;
+  text-shadow:#ccc 0.1em 0.1em 0.2em;
 }
-	
+  
 #content .post blockquote p:after, .pullquote:after {
-	content:"\00201D";
-	font-size:2em;	
-	line-height:0.5em;
-	color:#c7bbb5;
-	text-shadow:#ccc 0.1em 0.1em 0.2em;
+  content:"\00201D";
+  font-size:2em;  
+  line-height:0.5em;
+  color:#c7bbb5;
+  text-shadow:#ccc 0.1em 0.1em 0.2em;
 }
 
 #content p.alt a {
-	font-size: 11px;
-	margin: 0 0.3em 0;
+  font-size: 11px;
+  margin: 0 0.3em 0;
 }
