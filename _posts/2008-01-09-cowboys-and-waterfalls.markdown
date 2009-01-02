@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why research labs don't produce good software
+title: "Cowboys and Waterfalls:<br /><small>Why research labs don't produce good software</small>"
 ---
 
 I spent the first twenty-plus years of my career working as a researcher in university and corporate research labs -- at Carnegie Mellon, Mitsubishi Electric (MERL), and Sun Labs. It has been my privilege to work on some great projects with some amazingly talented people. But I have to tell you that by and large, the quality of the software coming out of research labs isn't very high. I blame the cowboys and the waterfalls.
