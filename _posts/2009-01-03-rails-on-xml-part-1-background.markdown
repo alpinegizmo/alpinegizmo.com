@@ -53,7 +53,7 @@ of the entire XML web application toolchain.
 * XSLT: transforms XML to HTML (can be applied in the DB, your app server, or in the browser)
 * XForms: forms that post XML back to the database
 
-Now if you buy into all of this, you don't really need an
+Note that if you buy into all of this, you don't really need an
 application server any more, be it implemented in Rails, or not. (If you want to play with some examples of this pure XML web app architecture, I think the sample apps distributed with [eXist](http://exist.sourceforge.net/), an open source, native XML database, are the best place to start.)
 
 Of course it is now 2009, and we've yet to see the XForms/REST/XQuery approach gain traction in the way you might've expected, if you bought into what was being said a couple of years ago. Yes, in some ways this XML architecture for  web application development is truly elegant -- but some pieces of the puzzle are rather hideous. 
