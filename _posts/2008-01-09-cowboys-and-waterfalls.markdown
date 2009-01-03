@@ -12,11 +12,8 @@ Most researchers are pretty good programmers, *in their domain of expertise*. So
 From what I've seen, most research lab directors will try to put some serious programming talent wherever it will do the most good, but corporate research labs often have considerable difficulty finding and keeping talented developers. Several factors contribute to this:
 
 * *Vagueness*. How a research project may impact products, who the customers will be, etc, may not be clearly understood. Developers who are used to getting written specs from the marketing department, or consultants who expect the client to provide a detailed requirements document often feel at sea in this environment. (The upside is that there is plenty of room for creativity.)
-
 * *Low probability of success*. For the researchers, success can come in many forms -- papers, patents, peer recognition. For the programmers who help them realize their ideas, success means seeing their code get used, either in an open source project or a product. The chance of this happening can be quite low.
-
 * *Inappropriate structure and leadership*. Corporate research labs are often part of a vast enterprise. Management of development resources in these research labs is usually left either to scientists who aren't particularly knowledgeable about industry-best practices in software engineering, or to managers rotated in from some other part of the company, whose experience is in a very different context.
-
 * *Cowboys and waterfalls*. The few really great coders in any research lab are likely to either be cowboys who can create amazing things overnight, but who lack the discipline to create code with lasting value -- or they may be believers in the "big upfront design" school of software development (aka the "[waterfall](http://en.wikipedia.org/wiki/Waterfall_model)" model). Management usually loves both the cowboys and the serious architects, because both appear to get things done, and are sometimes successful (though real long-term results are rare in most cases). Flashy demos, and grand schemes described in lengthy documents (and patents) can be impressive.
 
 ### What would be better?
@@ -26,15 +23,12 @@ Agile methods of software development (and extreme programming practices) are an
 Here are some reasons why agile methods are a natural fit for research-driven software development:
 
 * _Constant flow of new ideas_. It's part of the nature of research to be constantly adjusting your plan to fit with what you've just learned, and agile methods are all about adaptability. About ten years ago, while working as a researcher at Mitsubishi, I read in one of Tom Peters books that at Sony, the average time it takes to go from an idea to a prototype is one week. I was flabbergasted, but intrigued. Most research ideas fail -- your goal should be to fail faster!
-
 * _Small teams_. The conventional wisdom is that agile methods work well in small teams, but  may be difficult to scale. Not really an issue in most research environments.
-
 * _Variable scope is ok_. When push comes to shove and your project threatens to be late, as a manager you have three rational choices: move back the deadline, reduce the scope of work, or reduce the quality (a [death march](http://www.amazon.com/Death-March-Second-Edward-Yourdon/dp/013143635X/ref=pd_bbs_sr_1/104-3830814-3606322?ie=UTF8&s=books&qid=1180904769&sr=8-1) isn't a rational choice). 
 
 And some reasons why there might be problems:
 
 * _No customer (or plausible stand-in) to drive decision-making_. 
-
 * _Lack of training and mentors_.
 
 ### Advice to research directors
