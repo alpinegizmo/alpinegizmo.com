@@ -10,3 +10,4 @@ some interesting directions for future work.
 In the series of postings to follow I will cover various aspects of this journey.
 
   * [Part 1: Background](/2009/01/03/rails-on-xml-part-1-background.html)
+  * [Part 2: Data modeling](/2009/01/03/rails-on-xml-part-2-data-modeling.html)
