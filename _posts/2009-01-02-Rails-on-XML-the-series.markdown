@@ -11,3 +11,4 @@ In the series of postings to follow I will cover various aspects of this journey
 
   * [Part 1: Background](/2009/01/03/rails-on-xml-part-1-background.html)
   * [Part 2: Data modeling](/2009/01/04/rails-on-xml-part-2-data-modeling.html)
+  * [Part 3: XML workflow](/2009/01/06/rails-on-xml-part-3-xml-workflow.html)

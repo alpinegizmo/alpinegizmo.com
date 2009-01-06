@@ -5,7 +5,7 @@ title: "Cowboys and Waterfalls: Why research labs don't produce good software"
 
 I spent the first twenty-plus years of my career working as a researcher in university and corporate research labs -- at Carnegie Mellon, Mitsubishi Electric (MERL), and Sun Labs. It has been my privilege to work on some great projects with some amazingly talented people. But I have to tell you that by and large, the quality of the software coming out of research labs isn't very high. I blame the cowboys and the waterfalls.
 
-### So what goes wrong, you ask?
+## So what goes wrong, you ask?
 
 Most researchers are pretty good programmers, *in their domain of expertise*. Some aspect of the software they create is likely to be really well done -- the efficiency of the algorithms, the correctness of the protocols, the usability. But other aspects of the code don't get as much care. Very few researchers make a significant effort to hone their general software development skills. It's common to go straight from graduate school into a research job, never having worked in a product group. Just to give you the flavor, it's not uncommon for cvs and svn to be considered too much trouble (rather than pains in the neck that ought to be replaced by git or mercurial or darcs -- but that's another topic entirely). 
 
@@ -16,7 +16,7 @@ From what I've seen, most research lab directors will try to put some serious pr
 * *Inappropriate structure and leadership*. Corporate research labs are often part of a vast enterprise. Management of development resources in these research labs is usually left either to scientists who aren't particularly knowledgeable about industry-best practices in software engineering, or to managers rotated in from some other part of the company, whose experience is in a very different context.
 * *Cowboys and waterfalls*. The few really great coders in any research lab are likely to either be cowboys who can create amazing things overnight, but who lack the discipline to create code with lasting value -- or they may be believers in the "big upfront design" school of software development (aka the "[waterfall](http://en.wikipedia.org/wiki/Waterfall_model)" model). Management usually loves both the cowboys and the serious architects, because both appear to get things done, and are sometimes successful (though real long-term results are rare in most cases). Flashy demos, and grand schemes described in lengthy documents (and patents) can be impressive.
 
-### What would be better?
+## What would be better?
 
 Agile methods of software development (and extreme programming practices) are an excellent match for a research environment, but I've seldom seen them applied in that setting in anything better than a haphazard manner. (I am assuming you have some familiarity with the basics of these methods of going about software development -- if not, see the resources at the end of this article for some pointers to further reading.)
 
@@ -31,7 +31,7 @@ And some reasons why there might be problems:
 * _No customer (or plausible stand-in) to drive decision-making_. 
 * _Lack of training and mentors_.
 
-### Advice to research directors
+## Advice to research directors
 
 Foster a climate of sustainable development. Occasional crunches to meet deadlines are natural, but don't let it get out of hand. Communicate that in general, choosing to keep quality high while reducing the scope of the work is the right choice. Putting in week after week at a punishing pace inevitably leads to poor quality.
 
@@ -41,7 +41,7 @@ Hire one or more experienced XP/agile practitioners into your lab to serve as me
 
 When I look back on the projects I worked on as a researcher, the most regrettable aspect of the code I wrote is the lack of tests. If I could do one thing differently, I'd write tests. 
 
-### Resources
+## Resources
 
 If you're not familiar with agile methods or extreme programming (XP), here are some good places to start.
 
