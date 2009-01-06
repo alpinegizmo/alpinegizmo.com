@@ -2,6 +2,8 @@
 layout: post
 title: "Rails on XML, Part 2: Data modeling"
 ---
+[Part of the [Rails on XML](/2009/01/02/Rails-on-XML-the-series.html) series.]
+
 Among the first design decisions to be made with any web application are how to represent the data, and where to store it. The assumption behind this set of articles is that you are going to have XML data, probably in some sort of XML database. But why might someone come to this conclusion, and what are the alternatives?
 
 For many applications, modeling the data for a relational database is pretty straightforward, especially after you've done it many times before. Customer records, addresses, phone numbers, orders, login-ids and passwords -- we all know what to do with this stuff. Moreover, there are good tools available, and there are lots of talented people around who know how to use them. Both MySQL and PostgreSQL have their weak points, but are nevertheless pretty well-behaved and a small team isn't going to waste much time fighting with either one of them. Rails, with ActiveRecord, migrations, and validations, provides a good foundation for keeping complex applications relatively sane.

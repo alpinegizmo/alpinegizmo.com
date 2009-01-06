@@ -2,6 +2,7 @@
 layout: post
 title: "Rails on XML, Part 1: Background"
 ---
+[Part of the [Rails on XML](/2009/01/02/Rails-on-XML-the-series.html) series.]
 
 I'm sure the first question in many readers' minds is "Why
 bother?". The intersection between the XML community and the Ruby
