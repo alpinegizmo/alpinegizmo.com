@@ -2,7 +2,7 @@
 layout: post
 title: "Rails on XML, Part 3: XML workflow"
 ---
-A bit of overly simplified, sample XML. Don't get hung up on the details; the schema and data are just made up. I just want to give you something concrete to look at so I can raise a few issues for you to consider. 
+A bit of overly simplified, sample XML. Don't get hung up on the details; the schema and data are made up. I just want to give you something concrete to look at so I can raise a few issues for you to consider. 
 
     <property>
       <type>office space</type>
