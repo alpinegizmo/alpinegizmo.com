@@ -1,5 +1,9 @@
 /* this started its life as a Typo theme */
 
+#content #disqus_thread #dsq-content h3 {
+  font-weight: normal;
+}
+
 #content .post { 
   color:#555;
   clear:right;
