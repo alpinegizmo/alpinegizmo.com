@@ -10,25 +10,31 @@ An XSL stylesheet is a program that describes a transformation; in our case a tr
 
 We realized that if we didn't use Ruby in these views, we would not have direct access to the controllers' instance variables. We decided the most Rails-like approach we could think of would be to have the framework automatically make all controller instance variables available to the XSLTs, by serializing this data to XML, and then provide the resulting XML as the input to the XSLT view. At this point we decided it was time to dig in and read through the Rails ActionView code and figure out how to extend it to work this way.
 
-We found it is pretty easy to add a new renderer to Rails, and we experimented with that approach for a while. Ultimately we found it better for our application to write a simple module (XSLTRender) that we could include in our controllers that defines a render_through_xslt method. This method works like this:
+We found it is pretty easy to add a new renderer to Rails, and we experimented with that approach for a while. Ultimately we found it better for our application to write a simple module that we include in our controllers. This module defines a render_through_xslt method that works like this:
 
 {% highlight ruby %}
-def instance_hash
-  hash = instance_variables.inject({}) do |vars, var|
-    key = var[1..-1]
-    vars[key] = instance_variable_get(var)
-    vars
+module XSLTRender
+  def apply_xslt(template_file, xml)
+    # use xsltproc to perform the transformation
   end
 
-  hash['flash'] = flash
-  hash
-end
+  def instance_hash
+    hash = instance_variables.inject({}) do |vars, var|
+      key = var[1..-1]
+      vars[key] = instance_variable_get(var)
+      vars
+    end
 
-def render_through_xslt(options = {})
-  template = find_template(options)
-  page_xml = instance_hash.to_xml
-  html = apply_xslt(template, page_xml)
-  render :text => html
+    hash['flash'] = flash
+    hash
+  end
+
+  def render_through_xslt(options = {})
+    template = find_template(options)
+    page_xml = instance_hash.to_xml
+    html = apply_xslt(template, page_xml)
+    render :text => html
+  end
 end
 {% endhighlight %}
 
