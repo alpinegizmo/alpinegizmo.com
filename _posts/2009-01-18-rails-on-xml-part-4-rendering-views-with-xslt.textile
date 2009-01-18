@@ -1,0 +1,35 @@
+---
+layout: post
+title: "Rails on XML, Part 4: Rendering views with XSLT"
+---
+[Part of the "Rails on XML":/2009/01/02/Rails-on-XML-the-series.html series.]
+
+One of our project's major goals was to use XSLT for the views, and to integrate an XSLT rendering path into Rails in as natural a way as possible. This meant that each typical controller action would have a corresponding .xsl file, rather than a .html.erb file.
+
+An XSL stylesheet is a program that describes a transformation; in our case a transformation from XML to XHTML. In some ways the XSL transformation language (XSLT) is very awkward, but it is a programming language. For various reasons - because our client already had XSLT files for his site, because there were members of the team who knew XSLT and not Ruby, and because it just seemed cleaner - we decided to see how far we could get if we used pure XSLT for the Rails views, with no embedded Ruby. 
+
+We realized that if we didn't use Ruby in these views, we would not have direct access to the controllers' instance variables. We decided the most Rails-like approach we could think of would be to have the framework automatically make all controller instance variables available to the XSLTs, by serializing this data to XML, and then provide the resulting XML as the input to the XSLT view. At this point we decided it was time to dig in and read through the Rails ActionView code and figure out how to extend it to work this way.
+
+We found it is pretty easy to add a new renderer to Rails, and we experimented with that approach for a while. Ultimately we found it better for our application to write a simple module (XSLTRender) that we could include in our controllers that defines a render_through_xslt method. This method works like this:
+
+{% highlight ruby %}
+def instance_hash
+  hash = instance_variables.inject({}) do |vars, var|
+    key = var[1..-1]
+    vars[key] = instance_variable_get(var)
+    vars
+  end
+
+  hash['flash'] = flash
+  hash
+end
+
+def render_through_xslt(options = {})
+  template = find_template(options)
+  page_xml = instance_hash.to_xml
+  html = apply_xslt(template, page_xml)
+  render :text => html
+end
+{% endhighlight %}
+
+The final version is a bit more complex, as we added support for rendering partials and doing internationalization.
