@@ -2,6 +2,10 @@
   font-size:0.9em; 
 }
 
+#sidebar img {
+  margin-top: -10px;
+}
+
 #sidebar a {
   color:#9a7d61;
 }
