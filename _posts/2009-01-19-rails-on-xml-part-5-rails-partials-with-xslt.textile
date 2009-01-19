@@ -1,0 +1,11 @@
+---
+layout: post
+title: "Rails on XML, Part 5: Rails partials with XSLT"
+---
+[Part of the "Rails on XML":/2009/01/02/Rails-on-XML-the-series.html series.]
+
+Two really nice things flow from using XSLT for the views in the way I described last time, in "Part 4":/2009/01/19/rails-on-xml-part-4-rendering-views-with-xslt.html.
+
+First is that you get partials for free. To understand why this is so, you need to understand a little about how the XSLT language works. When you are writing a view in XSLT, you are describing a transformation from XML to HTML. You are saying, when you see _this_ in the XML coming in, produce _that_ in the HTML coming out. This means that setting up a controller action to re-render part of a page is staggeringly simple. All you have to do is provide a subset of the XML used to render the full page, and only the relevant portion of the HTML will be generated. You can use _exactly_ the same XSLT view for both the full page and the partial.
+
+The second thing you get is a much cleaner separation between your controllers and your views. Everything the views need will be, and must be, provided in the XML. And given the rendering pipeline we established, that means everything will come from the controller instance variables. Of course most everything in normal rails views comes from controller instance variables too, but it always possible to do something dirty in an rhtml view, like reach around to the models and include a bunch of business logic in your view. Since we have no ruby code in our views, these cheats are simply impossible. That may seem like a limitation, but it can be liberating to be able to say that there is a contract between the backend team and the frontend team whereby the backend team will produce XML that contains everything that's needed, and the frontend team will produce HTML from that XML. We found it was a good thing to have a real boundary there.
