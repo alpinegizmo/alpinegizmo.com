@@ -42,6 +42,6 @@ How will you manage the evolution of the XML schema over time -- in other words,
 
 Will (some) users be able to make changes to the XML schema, or will this require programmer intervention?
 
-### 
+<br />
 
 Finding good solutions to the problems of validation and migration is a key challenge when considering Rails on XML. In our application we generated the XML from other sources, and thereby sidestepped these issues, at least for a while.
