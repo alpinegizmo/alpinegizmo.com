@@ -10,6 +10,6 @@ title: 2008 in figures
 
 Countries visited for the first time: Portugal, Russia, Latvia, Lithuania
 
-Flight departures: Marseille (12), Madrid (11), Lyon (3), Hamburg (2), Nice (2), Riga (2), Berlin (1), Paris (1), Porto (1), St Petersburg (1)
+Flight departures: Marseille (12), Madrid (11), Lyon (2), Hamburg (2), Nice (2), Riga (2), Amsterdam(1), Berlin (1), Paris (1), Porto (1), St Petersburg (1)
 
 Note for travelers: calling 112 in Portugal is not guaranteed to get you someone who speaks English.
