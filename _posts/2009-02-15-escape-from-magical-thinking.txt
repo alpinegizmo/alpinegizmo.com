@@ -4,6 +4,6 @@ title: Escape from magical thinking
 ---
 
 Europeans often ask me why I moved to Europe (interestingly enough, I can't recall an American ever asking me this). One reason was to escape from the magical thinking so many Americans engage in. And which groups are most likely to need escaping from? Pew has prepared this <a href="http://pewresearch.org/pubs/1105/darwin-debate-religion-evolution">handy chart</a>.
-  
-  
+<br />
+<br />
 <img src="http://alpinegizmo.com/images/religionpew.png" alt="relgionpew.png" border="0" width="500" height="351" />
