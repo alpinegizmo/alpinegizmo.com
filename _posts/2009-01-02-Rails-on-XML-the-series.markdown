@@ -14,3 +14,4 @@ In the series of postings to follow I will cover various aspects of this journey
   * [Part 3: XML workflow](/2009/01/06/rails-on-xml-part-3-xml-workflow.html)
   * [Part 4: Rendering views with XSLT](/2009/01/18/rails-on-xml-part-4-rendering-views-with-xslt.html)
   * [Part 5: Rails partials with XSLT](/2009/01/19/rails-on-xml-part-5-rails-partials-with-xslt.html)
+  * [Part 6: The Software](/2009/02/28/rails-on-xml-part-6-the-software.html)
