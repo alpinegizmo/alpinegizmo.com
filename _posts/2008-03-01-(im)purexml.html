@@ -35,8 +35,8 @@ FROM employees WHERE id = 833038373
 
 <p>XSLTRANSFORM isn't the only case where DB2's pureXML forces you to use an unholy mixture of SQL and XQUERY. As IBM explains, "With plain XQuery you can not exploit full-text search capabilities provided by the DB2 Net Search Extender (NSE). You need to involve SQL for full-text search." This means doing something like this:</p>
 
-{% highlight xquery %}
-  xquery 
+<code><pre>
+    xquery 
     &lt;Employees&gt; { 
         for $e in db2-fn:sqlquery(
           "SELECT xmldata FROM EMPLOYEES.EMPLOYEES 
@@ -49,7 +49,7 @@ FROM employees WHERE id = 833038373
             { $ei/Name, &lt;Departments&gt; {$ei/DepartmentInfo/Name} &lt;/Departments&gt; } 
           &lt;/EmployeeInfo&gt;
     } &lt;/Employees&gt;
-{% endhighlight %}
+</pre></code>
 
 <p>For clarity, this example has been broken across multiple lines. Don't expect DB2 to be happy with input this easy to read.</p>
 
