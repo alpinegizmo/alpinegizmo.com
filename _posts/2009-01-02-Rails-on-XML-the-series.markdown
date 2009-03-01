@@ -15,4 +15,4 @@ In the series of postings to follow I will cover various aspects of this journey
   * [Part 4: Rendering views with XSLT](/2009/01/18/rails-on-xml-part-4-rendering-views-with-xslt.html)
   * [Part 5: Rails partials with XSLT](/2009/01/19/rails-on-xml-part-5-rails-partials-with-xslt.html)
   * [Part 6: The software](/2009/02/28/rails-on-xml-part-6-the-software.html)
-  * [Part 7: XML serialization](/2009/03/01/rails-on-xml-part-6-xml-serialization.html)
+  * [Part 7: XML serialization](/2009/03/01/rails-on-xml-part-7-xml-serialization.html)
