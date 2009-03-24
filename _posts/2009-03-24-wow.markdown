@@ -3,7 +3,7 @@ layout: post
 title: Wow
 ---
 
-With some of these youtube videos, even if parts are fake (and I have no reason to think this isn't legit), enormous imagination and effort were required.
+With some of these youtube videos, even if parts are fake (and I have no reason to think this isn't legit), enormous imagination and effort were required. This video gets the alpinegizmo seal of approval.
 
 <object width="480" height="295">
   <param name="movie" value="http://www.youtube.com/v/D2FX9rviEhw&hl=en&fs=1"></param>
