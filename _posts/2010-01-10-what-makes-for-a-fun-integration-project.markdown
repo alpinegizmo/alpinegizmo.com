@@ -3,7 +3,7 @@ layout: post
 title: What makes for a fun integration project?
 ---
 
-Recently I've been doing some sort for neo.org, an NGO and social network based in Switzerland. During the past month I've integrated Twitter (authentication, direct messages, updates) and Paypal (purchasing) into this Ruby-on-Rails-based site, and looking back, I realize that I enjoyed one of these integration projects -- and not the other. Both projects were about the same amount of work, and required me to write similar amounts of code. I've been trying to figure out why working with Paypal was frustrating for me, while working with Twitter was fun.
+Recently I've been doing some work for neo.org, an NGO and social network based in Switzerland. During the past month I've integrated Twitter (authentication, direct messages, updates) and Paypal (purchasing) into this Ruby-on-Rails-based site, and looking back, I realize that I enjoyed one of these integration projects -- and not the other. Both projects were about the same amount of work, and required me to write similar amounts of code. I've been trying to figure out why working with Paypal was frustrating for me, while working with Twitter was fun.
 
 Was it library/gem support? No, not really. Both twitter and paypal are widely used by rails sites, so it wasn't hard to find decent gems. I used the twitter and activemerchant gems, and both served me well.
 
