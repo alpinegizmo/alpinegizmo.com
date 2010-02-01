@@ -7,7 +7,7 @@ It's my impression that many are disappointed by the iPad. I think this is becau
 
 In my analysis I'm going to divide all computer usage into two categories: production (of media) vs consumption (of media). We're producers -- and Apple sees a much bigger market among the consumers.
 
-As a device for media production, the iPhone can claim points for producing tweets and images for flickr and a few fingerpaintings, but that's about it -- in my production/consumption dichotomy for digital media, smartphones sit heavily on the consumption side of the fence (but aren't very good at it, really). Furthermore, the market for digital consumption is only getting started. Devices like the Kindle, Apple TV, and digital picture frames are still niche products; most of us buy printed books and magazines, and print our pictures on paper when we want to frame them.
+As a device for media production, the iPhone can claim points for producing tweets, and photo streams for flickr, and a few fingerpaintings, but that's about it -- in my production/consumption dichotomy for digital media, smartphones sit heavily on the consumption side of the fence (but aren't very good at it, really). Furthermore, the market for digital consumption is only getting started. Devices like the Kindle, Apple TV, and digital picture frames are still niche products; most of us buy printed books and magazines, and print our pictures on paper when we want to frame them.
 
 Truth be told, many home laptops and desktop computers also sit heavily on the consumption side of the fence. That's why I think the potential for the iPad is very large. If the iPad can provide the best available experience for online media consumption, and I'm prepared to think it can, then how can it fail to do well? 
 
