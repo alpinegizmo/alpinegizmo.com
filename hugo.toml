@@ -8,6 +8,10 @@ theme = "LoveIt"
 languageCode = "en"
 languageName = "English"
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+    
 [module]
   [module.hugoVersion]
     min = "0.128.0"
