@@ -1,6 +1,5 @@
 +++
 date = '2026-04-10T11:33:35-07:00'
-draft = true
 title = 'Patterns in Stream Processing: Deduplication'
 tags = ['flink', 'patterns', 'deduplication']
 +++
